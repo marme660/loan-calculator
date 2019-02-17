@@ -1,0 +1,34 @@
+<form>
+    <section id="app">
+        <h2>Loan calculator</h2>
+        <div class="grid-container">
+            <div>
+                <label>Initial deposit</label>
+                <input id="initial-deposit" class="loan-input" type="text" value="20000" autofocus/>
+            </div>
+            <div>
+                <label>Monthly income</label>
+                <input id="monthly-income" class="loan-input" type="text" value="2000"/>
+            </div>
+            <div>
+                <label>Monthly Expenses</label>
+                <input id="monthly-expenses" class="loan-input" type="text" value="800"/>
+            </div>
+            <div class="interest-box">
+                <label>Interest</label>
+                <input type="range" min="1" value="3" max="5" step="1" class="slider" id="interest-slider">
+            </div>
+            <div>
+                <input id="interest-input" class="loan-input" type="text" value="3"/>
+            </div>
+            <div class="duration-box">
+                <label>Duration</label>
+                <input type="range" min="1" value="20" max="30" step="1" class="slider" id="duration-slider">
+            </div>
+            <div>
+                <input id="term-input" class="loan-input" type="text" value="20"/>
+            </div>
+        </div>
+        <div id="plan"></div>
+    </section>
+</form>

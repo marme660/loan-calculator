@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if which node > /dev/null; then
+    echo "Node.js is installed, skipping..."
+else
+    echo "Please install Node.js"
+fi
+
+echo "Installing dependencies"
+npm install
+./node_modules/gulp/bin/gulp.js start
